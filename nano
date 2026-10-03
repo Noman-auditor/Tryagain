@@ -1,0 +1,12 @@
+
+## Quick Start (Ubuntu 22.04 / Debian 12)## Files
+- `server.conf.example` -> copy to `/etc/wireguard/wg0.conf` after replacing keys
+- `client.conf.example` -> template for clients
+
+## IP Plan
+- Server: 10.8.0.1/24, fd86:ea04:1111::1/64
+- Clients: 10.8.0.2-254, fd86:ea04:1111::2-254
+- DNS: 10.8.0.1 forwards to 1.1.1.1
+
+## Important Limitations
+Self-hosted VPN hides ISP IP behind VPS IP but does NOT guarantee anonymity. Sites can detect datacenter IPs.
