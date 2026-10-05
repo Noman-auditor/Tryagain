@@ -1,12 +1,5 @@
-# Privacy Policy - NORA TUNNEL
+# Privacy Policy - Nora Tunnel
 
-- No advertising SDK
-- No hidden analytics
-- No background data collection
-- No credential harvesting
-- No traffic inspection / HTTPS interception / packet logging
-- No hidden proxy or third-party relay
-- Server only forwards traffic as configured (NAT)
-- Optional backend `GET /health` and `GET /server/status` never receive PrivateKeys, use HTTPS + Bearer token
-- Imported .conf / QR never uploaded
-- Destination services see VPS IP, not ISP IP, but anonymity is NOT guaranteed
+- **Local-First Architecture:** All configuration profiles, connection history, and routing rules are stored securely on your device using Room and EncryptedSharedPreferences.
+- **No Remote Accounts:** No login, registration, or cloud accounts are required to use Nora Tunnel.
+- **Zero Telemetry:** We do not collect, track, or share your browsing activity, traffic data, or personal information.

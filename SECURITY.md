@@ -1,15 +1,5 @@
-# Security Policy
+# Security Policy - Nora Tunnel
 
-## Secure Storage
-- PrivateKeys encrypted via Android Keystore + EncryptedSharedPreferences (AES256-GCM)
-- Never stored in Git, logs, analytics, crash reports, plain SharedPreferences
-- No hardcoded keys/passwords/tokens
-
-## Firewall
-- Default deny incoming, allow outgoing
-- Allow 22/tcp SSH only, 51820/udp WireGuard only
-- Documented in `server/firewall/setup-firewall.sh` and `server/scripts/install-wireguard.sh`
-- Use `ufw status verbose` to verify
-
-## Reporting
-Do not log PrivateKey. Report vulnerabilities to security@noratunnel.local
+- **Standard Cryptography:** Relies on battle-tested core implementations (WireGuard kernel/userspace libraries) without custom cryptographic primitives.
+- **Rigorous Validation:** All imported configuration links (VLESS, VMess, WireGuard, JSON) are strictly validated before profile creation.
+- **Log Redaction:** Sensitive parameters such as passwords, private keys, tokens, and pre-shared keys are automatically redacted before logs are displayed or exported.
